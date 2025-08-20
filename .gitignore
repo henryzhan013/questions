@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# Virtual env
+.venv/
+
+# OS junk
+.DS_Store
+
+# Local config & data
+.env
+.env.*
+*.db
+data/
+
+# Logs
+*.log
