@@ -56,4 +56,5 @@ ehthumbs.db
 Thumbs.db
 
 # Logs
-*.log 
+*.log .venv/
+__pycache__/
