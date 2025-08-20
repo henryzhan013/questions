@@ -1,0 +1,4 @@
+akshare
+pandas
+SQLAlchemy>=1.4
+python-dotenv
