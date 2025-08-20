@@ -58,3 +58,9 @@ Thumbs.db
 # Logs
 *.log .venv/
 __pycache__/
+.env
+*.db
+instance/
+__pycache__/
+*.py[cod]
+.mypy_cache/
