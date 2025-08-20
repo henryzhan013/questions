@@ -10,12 +10,13 @@ pip install -U pip
 pip install -r requirements.txt
 ```
 
-# 配置数据库（可选，默认 sqlite:///data/ashare.db）
+## 配置数据库（可选，默认 sqlite:///data/ashare.db）
 ```bash
 mkdir -p data
 echo "DATABASE_URL=sqlite:///data/ashare.db" > .env
 ```
 
+## 使用方法
 
 ### `q4/fetch.py`（拉数据）
 - **作用**：用 `akshare` 获取 A 股日线，标准化为统一列。
