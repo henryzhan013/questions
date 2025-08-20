@@ -35,14 +35,14 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('index') }}">用户登录系统</a>
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">用户登录系统</a>
             <div class="navbar-nav ms-auto">
                 {% if session.user_id %}
                     <a class="nav-link" href="{{ url_for('profile') }}">个人资料</a>
-                    <a class="nav-link" href="{{ url_for('logout') }}">登出</a>
+                    <a class="nav-link" href="{{ url_for('auth.logout') }}">登出</a>
                 {% else %}
-                    <a class="nav-link" href="{{ url_for('login') }}">登录</a>
-                    <a class="nav-link" href="{{ url_for('register') }}">注册</a>
+                    <a class="nav-link" href="{{ url_for('auth.login') }}">登录</a>
+                    <a class="nav-link" href="{{ url_for('auth.register') }}">注册</a>
                 {% endif %}
             </div>
         </div>
