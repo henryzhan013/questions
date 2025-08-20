@@ -24,3 +24,17 @@ python -m flask db upgrade
 
 # 5) 启动服务
 python -m flask --app wsgi.py run -p 5001 --debug
+```
+# 可选操作
+```bash
+# 查看数据库迁移历史
+python -m flask db history
+
+# 进入 Flask shell 进行调试
+python -m flask shell
+
+# 创建一个管理员账号（示例）
+python -m flask shell -c "from app.models import db, User; db.session.add(User(username='admin', email='admin@test.com')); db.session.commit()"
+
+
+
